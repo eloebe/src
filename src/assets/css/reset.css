@@ -1,0 +1,61 @@
+body,button,input,select,textarea,a,p,span,i,em,h2,h3,h4,h5
+/* for ie */
+{white-space:normal;
+	word-break:break-all;
+	/*font: 14px/1.5 tahoma, \5b8b\4f53, sans-serif;*/
+  font-family: "PingFang SC";
+  color:#000000;
+  font-size:medium;
+}
+em{font-style:italic;font-weight:0;}
+.weight{
+	font-weight: bold;
+}
+.right {
+	float: right;
+}
+.left{
+	float:left;
+}
+.relative{
+	position:relative;
+}
+button,
+input,
+select,
+textarea{
+	font-size: 100%;
+	border: none;
+}
+.textleft{
+	text-align: left;
+}
+.textright{
+	text-align:right;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color:#cccccc;
+    font-size: 0.375rem;
+    
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+    color: #cccccc;
+    font-size: 0.375rem;
+    
+} 
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #cccccc;
+    font-size: 0.375rem;
+    
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color: #cccccc;
+    font-size: 0.375rem;
+    
+} 
+.overflow{
+	overflow: hidden;
+}
+html{
+background: #f7f7f7;
+}
