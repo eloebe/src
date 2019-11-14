@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+		<link rel="stylesheet" href="<%= BASE_URL %>css/reset.css">
+		<link rel="stylesheet" href="<%= BASE_URL %>layui/css/layui.css">
+		<link rel="stylesheet" href="<%= BASE_URL %>layui/model/step-lay/step.css">
+		<script src="https://wow.techbrood.com/libs/jquery/jquery-1.11.1.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Rock+Salt' rel='stylesheet' type='text/css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+		<style>
+			#console{
+				height: 100%;
+			}
+			#console>div{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="console"></div>
+		<script src="<%= BASE_URL %>layui/layui.js" type="text/javascript"></script>
+		<script src="<%= BASE_URL %>layui/model/step-lay/step.js" type="text/javascript"></script>
+		
+		<script>
+			//设置模块
+			layui.config({
+				base: '<%= BASE_URL %>layui/model/step-lay/' //假设这是你存放拓展模块的根目录
+			}).extend({ //设定模块别名
+				step: 'step'
+			});
+		</script>
+	</body>
+</html>
